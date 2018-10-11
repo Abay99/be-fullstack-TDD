@@ -42,7 +42,14 @@ def get_max_with_one_or_more_arguments(first, *args):
 
 
 def get_max_bounded(*args, low, high):
-    pass
+    """
+        return maximum number among args bounded by low & high
+    """
+    result = float('-inf')
+    for arg in args:
+        if arg > result and low < arg < high:
+            result = arg
+    return result
 
 
 def make_max(*, low, high):
