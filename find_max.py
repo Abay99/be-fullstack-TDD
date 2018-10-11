@@ -21,8 +21,14 @@ def get_max_with_one_argument(a):
 
 def get_max_with_many_arguments(*args):
 
-    pass
-
+    """
+        return maximum number among args
+    """
+    result = float('-inf')
+    for arg in args:
+        if arg > result:
+            result = arg
+    return result
 
 def get_max_with_one_or_more_arguments(first, *args):
     pass
