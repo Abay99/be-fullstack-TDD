@@ -1,16 +1,20 @@
+
 def get_max(a, b):
-    pass
+    """
+        return max number among a and b
+    """
+    if a > b: return a
+    else: return b
 
 
 def get_max_without_arguments():
     pass
 
-
 def get_max_with_one_argument(a):
     pass
 
-
 def get_max_with_many_arguments(*args):
+
     pass
 
 
