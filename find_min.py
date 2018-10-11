@@ -37,6 +37,11 @@ def get_min_with_one_or_more_arguments(first, *args):
     """
         return smallest number among first + args
     """
+    result = float('inf')
+    for arg in (first,) + args:
+        if arg < result:
+            result = arg
+    return result
 
 
 def get_min_bounded(*args, low, high):
