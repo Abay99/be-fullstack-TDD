@@ -53,7 +53,19 @@ def get_max_bounded(*args, low, high):
 
 
 def make_max(*, low, high):
+    """
+        return inner function object which takes at last one argument
+        and return highest number amount it's arguments, but if the
+        highest number is higher than the 'high' which given as required
+        argument the inner function has to return it.
+    """
+    
     def inner(first, *args):
-        pass
-
+        result = float('-inf')
+        
+        for arg in (first,) + args:
+            if arg > result and low < arg < high:
+                result = arg
+        return result
+    
     return inner
