@@ -1,9 +1,12 @@
 
-
 def get_min(a, b):
     """
         return min number among a and b
     """
+    if a < b :
+        return a
+    else:
+        return b
 
 
 def get_min_without_arguments():
@@ -24,6 +27,7 @@ def get_min_with_many_arguments(*args):
     """
 
 
+
 def get_min_with_one_or_more_arguments(first, *args):
     """
         return smallest number among first + args
@@ -36,6 +40,7 @@ def get_min_bounded(*args, low, high):
     """
 
 
+
 def make_min(*, low, high):
     """
         return inner function object which takes at last one argument
@@ -45,6 +50,5 @@ def make_min(*, low, high):
     """
 
     def inner(first, *args):
-        pass
 
-    return inner
+        return inner
