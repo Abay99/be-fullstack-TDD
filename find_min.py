@@ -1,4 +1,5 @@
 
+
 def get_min(a, b):
     """
         return min number among a and b
@@ -13,7 +14,7 @@ def get_min_without_arguments():
     """
         raise TypeError exception with message
     """
-
+    raise TypeError("missed arguments")
 
 def get_min_with_one_argument(x):
     """
@@ -50,5 +51,6 @@ def make_min(*, low, high):
     """
 
     def inner(first, *args):
+
 
         return inner
